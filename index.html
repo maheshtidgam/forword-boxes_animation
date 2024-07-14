@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            #container{
+
+
+                
+                height: 500px;
+               
+                border: 1px solid;
+                border-bottom: none;
+                position: relative;
+                text-align: center;
+            }
+           
+            #box1{
+                width: 45vw;
+                height: 80px;
+                border: 1px solid;
+                position: absolute;
+                top: 50px;
+                left:-350px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                
+                
+                animation-name:left_right ;
+                animation-duration: 1.2s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+               
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,0,255,0.9829059829059829) 16%, rgba(31,185,185,1) 62%);
+            }
+
+            #box2{
+                width: 45vw;
+                height: 80px;
+                border: 1px solid;
+                position: absolute;
+                top: 240px;
+                left: 0px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                animation-name:left_right ;
+                animation-duration: 1.2s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+                
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,0,255,0.9829059829059829) 16%, rgba(31,185,185,1) 62%);
+            }
+
+            #box3{
+                width: 45vw;
+                height: 80px;
+                border: 1px solid;
+                position: absolute;
+                top: 145px;
+                right: 0px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                padding-left: 20px;
+                animation: right_left 1.2s ease-out 0s infinite  forwards;
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,0,255,0.9829059829059829) 16%, rgba(31,185,185,1) 62%);
+                
+               
+            }
+
+            #box4{
+                width: 45vw;
+                height: 80px;
+                border: 1px solid;
+                position: absolute;
+                top: 330px;
+                right: 0px;
+                padding-left: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                animation: right_left 1.2s ease-out 0s infinite  forwards;
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,0,255,0.9829059829059829) 16%, rgba(31,185,185,1) 62%);
+            }
+
+
+            @keyframes left_right {
+
+                0%{
+                    left: -350px;
+                }
+                100%{
+                    left:0px
+                }
+
+
+                
+            }
+
+
+            @keyframes right_left {
+
+                0%{
+                            right: -350px;
+                    }
+                100%{
+                            right:0px;
+                    }
+
+                }
+
+    </style>
+</head>
+<body>
+
+    <main id="container">
+
+            <div id="box1">box1</div>
+            <div id="box2">box2</div>
+            <div id="box3"> box3</div>
+            <div id="box4">box4</div>
+    </main>
+    
+</body>
+</html>
